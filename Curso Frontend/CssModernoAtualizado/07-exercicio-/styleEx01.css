@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(101, 99, 99);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(10rem,20rem,1fr);
+    /* para centralizar*/
+    margin: 0 auto;
+    max-width: 74rem;
+}
+
+a{
+    color: #43f6c9;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    grid-column: span 3;
+    grid-row: 1;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+
+}
+
+main{
+    grid-column: 2 /4;
+    grid-row: 3 / 6;
+}
+
+.sidebar{
+    grid-column: span 1;
+    grid-row: 2 /8;
+}
+
+.intro{
+    grid-column: 2 / 4;
+}
+
+.blog-posts{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.blog-posts > article:first-child{
+    grid-column: span 2 ;
+}
+
+img{
+    border-radius: .5rem;
+    height: auto;
+    width: 100%;
+}
+
+nav a{
+    margin: 1rem;
+}
+
+aside li{
+    /*para dar um espacamento*/
+    margin: .5rem 0;
+}
+
+footer{
+    border-top: 1px solid white;
+    grid-column: span 3;
+    text-align: center  ;
+}

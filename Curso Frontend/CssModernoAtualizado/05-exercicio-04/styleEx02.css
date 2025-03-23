@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    border: 0;
+}
+
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galery img{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 15rem;
+    height: 15rem;
+    width: 15rem;
+}
