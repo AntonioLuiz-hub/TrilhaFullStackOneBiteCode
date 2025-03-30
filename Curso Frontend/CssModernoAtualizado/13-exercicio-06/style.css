@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-FundoBranco: #fffff;
+    --color-FundoClaro: #e0e0e0;
+    --color-MainColor: #6c63ff;
+    --color-FundoDark: #2c2c2e;
+    --color-FundoBlack: #070707;
+
+
+}
+
+body{
+    background-color: rgb(67, 65, 65);
+}
