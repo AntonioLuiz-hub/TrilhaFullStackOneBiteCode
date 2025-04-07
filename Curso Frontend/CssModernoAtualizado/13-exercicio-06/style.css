@@ -19,15 +19,22 @@ body{
 }
 
 .foto-galera img{
-    width: 28rem;
-    height: 20rem;
+    width: 428px ;
+    height: 500px;
 }
 
 .hero{
+    font-size: 1rem;
+    position: absolute;
+    top: 0 ;
+    color: #ffffff;
+    max-height: 10rem;
+}
+
+.hero-content{
     display: grid;
-    grid-row: 1;
-    align-content: center;
-    font-size: 3rem;
+    padding: 10rem 1rem;
+    max-width: 15rem;
 }
 
 .speakers h2{
@@ -37,12 +44,25 @@ body{
     font-size: 2rem;
 }
 
+.speakers{
+    padding-bottom: 2rem;
+}
+
 .speakers-grid{
-    display: grid;
-    padding-left: 5rem;
+    gap: 1rem;
 }
 
 .speaker-card{
     background-color: var(--color-FundoBranco);
+    display: grid;
+    justify-content: center;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
 
+}
+
+.speaker-card img{
+    border-radius: 5rem;
+    
 }
