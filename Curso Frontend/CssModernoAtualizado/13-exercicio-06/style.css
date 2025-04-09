@@ -5,16 +5,68 @@
 }
 
 :root{
-    --color-FundoBranco: #ffffff;
-    --color-FundoClaro: #e0e0e0;
-    --color-MainColor: #6c63ff;
-    --color-FundoDark: #2c2c2e;
-    --color-FundoBlack: #070707;
+    
+    --color-white: #ffffff;
+    --color-light: #e0e0e0;
+    --color-purple: #6c63ff;
+    --color-dark: #2c2c2e;
+    --color-black: #070707;
+
+    --color-primary: var(--color-purple);
+    --color-background: var(--color-light);
+    --color-foreground: var(--color-black);
+    --color-card-background: var(--color-white);
 
 
 }
 
 body{
-    background-color: var(--color-FundoClaro)
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+
+}
+
+.hero{
+    background: 
+    linear-gradient(to bottom right, rgba(0,0,0,0.1),rgba(0,0,0,0.8)),
+    url(foto-malta.jpg);
+    color: var(--color-white);
+
+    min-height: 100vh;
+
+    /*cobre toda area disponivel*/
+    background-size: cover;
+    /*centraliza a imagem de fundo e sempre se espande a partir do centro*/
+    background-position: center;
+
+    display: grid;
+    place-content: center;
+}
+
+.hero h1{
+    font-size: 2.5 rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p{
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn{
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: .5rem;
+    color: var(--color-white);
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background-color: rgb(186, 95, 186);
 }
 
